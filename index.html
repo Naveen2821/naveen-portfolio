@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>K Naveen Nayak | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:white;
+overflow-x:hidden;
+}
+
+.navbar{
+position:fixed;
+top:0;
+width:100%;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(15,23,42,0.9);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+.logo{
+font-size:24px;
+font-weight:700;
+color:#38bdf8;
+}
+
+.nav-links a{
+text-decoration:none;
+color:white;
+margin-left:25px;
+font-weight:500;
+transition:.3s;
+}
+
+.nav-links a:hover{
+color:#38bdf8;
+}
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
+background:
+linear-gradient(rgba(15,23,42,.8),rgba(15,23,42,.9)),
+url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80');
+background-size:cover;
+background-position:center;
+}
+
+.hero-content img{
+width:180px;
+height:180px;
+border-radius:50%;
+border:5px solid #38bdf8;
+object-fit:cover;
+margin-bottom:20px;
+}
+
+.hero h1{
+font-size:4rem;
+margin-bottom:10px;
+}
+
+.hero h2{
+font-size:1.6rem;
+color:#38bdf8;
+margin-bottom:15px;
+}
+
+.hero p{
+max-width:700px;
+margin:auto;
+line-height:1.8;
+}
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:12px 30px;
+background:#38bdf8;
+color:#0f172a;
+font-weight:600;
+text-decoration:none;
+border-radius:30px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+}
+
+section{
+padding:100px 10%;
+}
+
+.section-title{
+font-size:2.5rem;
+text-align:center;
+margin-bottom:50px;
+color:#38bdf8;
+}
+
+.about-card,
+.skill-card,
+.project-card,
+.cert-card{
+background:#1e293b;
+border:1px solid rgba(255,255,255,0.08);
+padding:25px;
+border-radius:20px;
+transition:.4s;
+}
+
+.about-card:hover,
+.skill-card:hover,
+.project-card:hover,
+.cert-card:hover{
+transform:translateY(-10px);
+}
+
+.about-card{
+max-width:900px;
+margin:auto;
+text-align:center;
+line-height:1.8;
+}
+
+.timeline{
+position:relative;
+max-width:800px;
+margin:auto;
+}
+
+.timeline-item{
+background:#1e293b;
+padding:20px;
+margin-bottom:25px;
+border-left:5px solid #38bdf8;
+border-radius:12px;
+}
+
+.skills-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.skill-card h3{
+margin-bottom:10px;
+}
+
+.bar{
+height:8px;
+background:#334155;
+border-radius:20px;
+overflow:hidden;
+}
+
+.fill{
+height:100%;
+background:#38bdf8;
+}
+
+.projects-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.project-card h3{
+margin-bottom:10px;
+color:#38bdf8;
+}
+
+.cert-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.contact{
+text-align:center;
+}
+
+.contact p{
+margin:15px 0;
+font-size:1.1rem;
+}
+
+footer{
+background:#020617;
+padding:25px;
+text-align:center;
+margin-top:50px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.5rem;
+}
+
+.hero h2{
+font-size:1.2rem;
+}
+
+.nav-links{
+display:none;
+}
+
+.hero-content img{
+width:140px;
+height:140px;
+}
+}
+</style>
+
+</head>
+
+<body>
+
+<nav class="navbar">
+<div class="logo">K Naveen Nayak</div>
+
+<div class="nav-links">
+<a href="#about">About</a>
+<a href="#education">Education</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#certificates">Certificates</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<img src="profile.jpg" alt="Profile">
+
+<h1>K Naveen Nayak</h1>
+
+<h2>AI & Data Science Student</h2>
+
+<p>
+Passionate about Artificial Intelligence, Data Science,
+Programming and innovative technologies. Dedicated to
+continuous learning and building impactful solutions
+through technology.
+</p>
+
+<a href="#projects" class="btn">View Projects</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="section-title">About Me</h2>
+
+<div class="about-card">
+
+<p>
+Hello, myself K Naveen Nayak from Bangalore.
+I completed my PUC at PI Medical Academy and am currently
+pursuing B.Tech in Artificial Intelligence and Data Science
+under Reva University. I enjoy solving problems through
+programming and exploring emerging technologies in AI,
+Data Science and IoT.
+</p>
+
+</div>
+
+</section>
+
+<section id="education">
+
+<h2 class="section-title">Education</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<h3>B.Tech - Artificial Intelligence & Data Science</h3>
+<p>Reva University</p>
+<p>2nd Semester</p>
+<p>Bangalore - 560064</p>
+</div>
+
+<div class="timeline-item">
+<h3>Pre-University Course (PUC)</h3>
+<p>PI Medical Academy</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="section-title">Skills</h2>
+
+<div class="skills-grid">
+
+<div class="skill-card">
+<h3>Python</h3>
+<div class="bar"><div class="fill" style="width:85%"></div></div>
+</div>
+
+<div class="skill-card">
+<h3>C Programming</h3>
+<div class="bar"><div class="fill" style="width:80%"></div></div>
+</div>
+
+<div class="skill-card">
+<h3>Advanced C</h3>
+<div class="bar"><div class="fill" style="width:75%"></div></div>
+</div>
+
+<div class="skill-card">
+<h3>Communication</h3>
+<div class="bar"><div class="fill" style="width:90%"></div></div>
+</div>
+
+<div class="skill-card">
+<h3>Team Work</h3>
+<div class="bar"><div class="fill" style="width:88%"></div></div>
+</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2 class="section-title">Projects</h2>
+
+<div class="projects-grid">
+
+<div class="project-card">
+<h3>2D Graphics Editor</h3>
+<p>
+Menu-driven graphics editor developed using C programming.
+Supports drawing operations and graphical manipulation.
+</p>
+</div>
+
+<div class="project-card">
+<h3>AI Healthcare Report</h3>
+<p>
+AI-powered healthcare reporting system for analysis and
+decision support.
+</p>
+</div>
+
+<div class="project-card">
+<h3>Smart Parking System</h3>
+<p>
+IoT-based parking management system using sensors and
+automation.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="certificates">
+
+<h2 class="section-title">Certifications</h2>
+
+<div class="cert-grid">
+
+<div class="cert-card">
+<h3>IBM Skills Course</h3>
+<p>Successfully completed IBM online certification.</p>
+</div>
+
+<div class="cert-card">
+<h3>Instagram Design System</h3>
+<p>Completed online course on design systems.</p>
+</div>
+
+<div class="cert-card">
+<h3>Wadhwani Foundation</h3>
+<p>Successfully completed certification program.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="section-title">Contact</h2>
+
+<div class="contact">
+
+<p>📧 naveennayak2817@gmail.com</p>
+
+<p>📞 8073134667</p>
+
+<p>📍 Bangalore, Karnataka, India</p>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 K Naveen Nayak | AI & Data Science Student
+</footer>
+
+</body>
+</html>
