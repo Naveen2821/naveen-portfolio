@@ -1,0 +1,8 @@
+export const certifications = [
+  { title: 'Python for Data Science', issuer: 'IBM', date: 'January 2026', skills: ['Python', 'Pandas', 'Data Science'], credentialId: 'acf01452-2ced-4488-9149-88cbb00a2e18', url: 'https://www.credly.com/badges/acf01452-2ced-4488-9149-88cbb00a2e18' },
+  { title: 'Data Analysis Using Python', issuer: 'IBM', date: 'January 2026', skills: ['Python', 'Data Analysis', 'Jupyter', 'JupyterLab'], credentialId: '20329875-e038-4a15-99e2-56712623a800', url: 'https://www.credly.com/badges/20329875-e038-4a15-99e2-56712623a800' },
+  { title: 'Data Visualization Using Python', issuer: 'IBM', date: 'January 2026', skills: ['Python', 'Matplotlib', 'Seaborn', 'Folium', 'Data Visualization'], credentialId: 'a67d873f-8e4b-47cc-b07a-b92054aefdd7', url: 'https://www.credly.com/badges/a67d873f-8e4b-47cc-b07a-b92054aefdd7' },
+  { title: 'Applied Data Science with Python - Level 2', issuer: 'IBM', date: 'January 2026', skills: ['Python', 'Matplotlib', 'Bokeh'], credentialId: 'ba6a9e04-dfbb-424d-8d92-93be989e0f02', url: 'https://www.credly.com/badges/ba6a9e04-dfbb-424d-8d92-93be989e0f02' },
+  { title: 'Ignite Full - Certificate of Proficiency', issuer: 'Wadhwani Foundation', date: '2026', description: 'Successfully completed the Ignite Full program and developed a practice venture focused on applying entrepreneurial skills to a real-world idea.', skills: [] },
+  { title: 'Instagram System Design Course: From Concept to Reality', issuer: 'Scaler', date: '2026', description: 'Completed a system design course covering concepts and challenges involved in designing an Instagram-like platform.', skills: [] },
+] as const
